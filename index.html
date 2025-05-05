@@ -5,16 +5,27 @@
         <p>Currently under discovery... Come back soon!</p>
     </body>
     <style>
-        .button {
-            background-color: #007bff;
+        .dynamic-button {
+            background-color: #4caf50;
             color: white;
-            padding: 10px 20px;
+            padding: 12px 24px;
+            font-size: 16px;
             border: none;
-            border-radius: 8px;
+            border-radius: 10px;
             cursor: pointer;
+            transition:
+                transform 0.2s ease,
+                background-color 0.3s ease;
         }
-        .button:hover {
-            background-color: #0056b3;
+
+        .dynamic-button:hover {
+            background-color: #45a049;
+            transform: scale(1.05);
+        }
+
+        .dynamic-button:active {
+            transform: scale(0.95);
         }
     </style>
+    <button class="dynamic-button">Click Me</button>
 </html>
