@@ -1,17 +1,17 @@
 body {
+    background-color: #f4f1ee;
+    margin: 0;
+    padding: 0;
     font-family: "Jost", sans-serif;
     font-optical-sizing: auto;
-    font-weight: 400;
+    /*font-weight: 100;*/
     font-style: normal;
 }
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-    color: #2e2e2e;
-}
-p {
-    color: #b0846d;
+
+.nav-bar {
+    margin: 0;
+    padding: 1px;
+    background-color: #222831;
+    text-align: center;
+    font-weight: 200;
 }
