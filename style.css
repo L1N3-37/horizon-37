@@ -1,5 +1,19 @@
+/*
+
+-- Color Scheme --
+
+#272829 -- Background for nav-bar / footer
+
+#61677A -- Text for secondary content
+
+#D8D9DA -- Borders / dividers / hover effects
+
+#FFF6E0 -- Main background
+
+*/
+
 body {
-    background-color: #f4f1ee;
+    background-color: #fff6e0;
     margin: 0;
     padding: 0;
     font-family: "Jost", sans-serif;
@@ -11,7 +25,7 @@ body {
 .nav-bar {
     margin: 0;
     padding: 1px;
-    background-color: #222831;
+    background-color: #272829;
     text-align: center;
     font-weight: 200;
 }
@@ -22,8 +36,11 @@ body {
     font-weight: 900;
     padding: 0;
     margin: 0;
+    color: #272829;
+    letter-spacing: 0.2px;
 }
-/*p {
-    color: #b0846d;
+
+.placeholder {
+    color: #61677a;
+    text-align: center;
 }
-*/
