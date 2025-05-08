@@ -1,7 +1,7 @@
 body {
-    background-color: #f4f1ee;
-    margin: 0;
-    padding: 0;
+    margin: 0px;
+    padding: 0px;
+    background-color: #fff6e0;
     font-family: "Jost", sans-serif;
     font-optical-sizing: auto;
     /*font-weight: 100;*/
@@ -9,9 +9,31 @@ body {
 }
 
 .nav-bar {
-    margin: 0;
     padding: 1px;
+    margin: 0;
     background-color: #272829;
     text-align: center;
     font-weight: 200;
+    font-size: 150%;
+}
+
+.projects-heading-1 {
+    text-align: center;
+    padding: 1px;
+    margin: 0px;
+    color: #272829;
+}
+
+.subtitle-1 {
+    padding: 1px;
+    margin: 0px;
+    color: #272829;
+    text-align: center;
+}
+
+.para-1 {
+    padding: 1px;
+    margin: 0px;
+    color: #61677a;
+    text-align: center;
 }
