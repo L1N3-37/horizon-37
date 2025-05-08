@@ -28,19 +28,24 @@ body {
     background-color: #272829;
     text-align: center;
     font-weight: 200;
+    font-size: 150%;
 }
 
 .horizon37-title {
     text-align: center;
     font-size: 350%;
     font-weight: 900;
-    padding: 0;
-    margin: 0;
+    padding: 1px;
+    margin: 10px;
     color: #272829;
     letter-spacing: 0.2px;
 }
 
 .placeholder {
-    color: #61677a;
+    color: #d8d9da;
     text-align: center;
+    font-size: 100%;
+    background-color: #272829;
+    padding: 20px;
+    margin: 0px;
 }
