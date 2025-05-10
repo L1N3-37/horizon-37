@@ -1,75 +1,84 @@
-/*
-
--- Color Scheme --
-
-#272829 -- Background for nav-bar / footer
-
-#61677A -- Text for secondary content
-
-#D8D9DA -- Borders / dividers / hover effects
-
-#FFF6E0 -- Main background
-
-*/
-
 body {
     margin: 0px;
-    background-color: #fff6e0;
+    padding: 0px;
+    height: 100%;
+    background-color: #222629;
     font-family: "Josefin Sans";   
     font-optical-sizing: auto;
     font-weight: 300;
+    
+}
 
+#bg-image {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  z-index: -1;
+  opacity: .01;
+  pointer-events: none;
 }
 
 nav {
     display: flex;
     margin: 0;
     padding: 1px;
-    height: 80px;
+    height: 100px;
     gap: 80px;
-    background-color: #272829;
     text-align: center;
     justify-content: center;
     align-items: center;
+    background-color: #222629;
 }
 
 .nav-links {
     text-decoration: none;
-    color: #ccc5b9;
+    color: #6B6E70;
     font-weight: 400;
     font-size: 160%;
 }
 
 .nav-links:hover {
-    color: #fff6e0;
+    color: #86C232;
 }
 
 .nav-37 {
     font-size: 250%;
     text-decoration: none;
-    color: #ccc5b9;
+    color: #86C232;
 }
 
 .nav-37:hover {
     color: #fff6e0;
 }
 
-.horizon37-title {
+.line {
+    color:#86C232;
+    margin: 0px;
+    padding: 0px;
+
+}
+
+.H37-title {
+    padding: 0px;
+    margin: 0px;
     text-align: center;
-    font-size: 350%;
-    font-weight: 900;
+    font-size: 1000%;
+    font-weight: 700;
     padding: 1px;
     margin: 10px;
-    color: #272829;
-    letter-spacing: 0.2px;
+    color: #ffffff;
 }
 
 .placeholder {
-    color: #d8d9da;
+    color: #6B6E70;
     text-align: center;
     font-size: 110%;
-    background-color: #272829;
-    padding: 20px;
+    padding: 0px;
     margin: 0px;
     font-size: 170%;
 }
