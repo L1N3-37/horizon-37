@@ -67,18 +67,24 @@ nav {
     padding: 0px;
     margin: 0px;
     text-align: center;
-    font-size: 1000%;
-    font-weight: 700;
-    padding: 1px;
-    margin: 10px;
+    font-size: 1100%;
+    font-weight: 350;
+    padding: 0px;
+    margin: -10px;
     color: #ffffff;
 }
 
-.placeholder {
-    color: #6B6E70;
+#slogan {
+    color: white;
     text-align: center;
     font-size: 110%;
     padding: 0px;
     margin: 0px;
     font-size: 170%;
+    font-weight: 200;
+}
+
+#slogan-hr {
+    border-color: #86C232;
+    width: 600px;
 }
