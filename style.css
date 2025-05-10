@@ -39,7 +39,7 @@ nav {
     text-decoration: none;
     color: #6B6E70;
     font-weight: 400;
-    font-size: 160%;
+    font-size: 150%;
 }
 
 .nav-links:hover {
@@ -57,9 +57,9 @@ nav {
 }
 
 .line {
-    color:#86C232;
     margin: 0px;
     padding: 0px;
+    border: solid #86C232
 }
 
 .H37-title {

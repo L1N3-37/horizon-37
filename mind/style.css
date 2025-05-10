@@ -6,6 +6,7 @@ body {
     font-family: "Josefin Sans";   
     font-optical-sizing: auto;
     font-weight: 300;
+    
 }
 
 #bg-image {
@@ -54,41 +55,12 @@ nav {
     font-size: 170%;
 }
 
+.nav-37:hover {
+    color: hsl(85, 59%, 65%);
+}
+
 .line {
     margin: 0px;
     padding: 0px;
     border: solid #86C232
-}
-
-.subtitle-1 {
-    padding: 0px;
-    margin: 0px;
-    color: white;
-    text-align: center;
-    font-size: 120%;
-}
-
-.xbox-desc {
-    padding: 1px;
-    margin: 0px;
-    color: #6B6E70;
-    text-align: center;
-    font-size: 110%;
-}
-
-.xbox-manager-container {
-    width: 20px;
-    height: 50px;
-    overflow: hidden;
-    display: flex;
-    justify-content: center;
-    
-}
-
-.xbox-manager {
-    width: 350px;
-    height: 350px;
-    object-fit: cover;
-    position: absolute;
-    display: block;
 }
