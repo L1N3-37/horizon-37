@@ -58,8 +58,9 @@ nav {
 
 .line {
     margin: 0px;
-    padding: 0px;
+    border: none;
     border: solid #86C232;
+    border-top: none;
 }
 
 .H37-title {
