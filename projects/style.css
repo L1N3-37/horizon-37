@@ -1,65 +1,85 @@
 body {
     margin: 0px;
     padding: 0px;
-    background-color: rgb(255, 246, 230);
-    font-family: "Josefin Sans", sans-serif;
+    height: 100%;
+    background-color: #222629;
+    font-family: "Josefin Sans";   
     font-optical-sizing: auto;
     font-weight: 300;
+}
+
+#bg-image {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  z-index: -1;
+  opacity: .04;
+  pointer-events: none;
 }
 
 nav {
     display: flex;
     margin: 0;
     padding: 1px;
-    height: 80px;
+    height: 100px;
     gap: 80px;
-    background-color: #1A1E26;
     text-align: center;
     justify-content: center;
     align-items: center;
+    background-color: #222629;
 }
 
 .nav-links {
     text-decoration: none;
-    color: #ccc5b9;
+    color: #6B6E70;
     font-weight: 400;
     font-size: 160%;
 }
 
 .nav-links:hover {
-    color: #fff6e0;
+    color: #86C232;
 }
 
 .nav-37 {
     font-size: 250%;
     text-decoration: none;
-    color: #ccc5b9;
+    color: #86C232;
 }
 
 .nav-37:hover {
-    color: #fff6e0;
+    color: hsl(85, 59%, 65%);
 }
 
+.line {
+    color:#86C232;
+    margin: 0px;
+    padding: 0px;
+}
 .projects-heading {
     text-align: center;
     padding: 25px;
     margin: 0px;
-    color: #272829;
+    color:#86C232;
     font-size: 150%;
 }
 
 .subtitle-1 {
     padding: 0px;
     margin: 0px;
-    color: #272829;
+    color: white;
     text-align: center;
     font-size: 120%;
 }
 
-.para-1 {
+.xbox-desc {
     padding: 1px;
     margin: 0px;
-    color: #61677a;
+    color: #6B6E70;
     text-align: center;
     font-size: 110%;
 }
