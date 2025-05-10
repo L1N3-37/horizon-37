@@ -14,21 +14,31 @@
 
 body {
     margin: 0px;
-    padding: 0px;
     background-color: #fff6e0;
-    font-family: "Jost", sans-serif;
+    font-family: "Josefin Sans", sans-serif;    
     font-optical-sizing: auto;
-    /*font-weight: 100;*/
-    font-style: normal;
+    font-weight: 400;
 }
 
 .nav-bar {
     margin: 0;
     padding: 1px;
+    height: 70px;
     background-color: #272829;
     text-align: center;
-    font-weight: 200;
-    font-size: 150%;
+    font-size: 160%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-links {
+    text-decoration: none;
+    color: #d8d9da;
+}
+
+.nav-links:hover {
+    text-decoration: underline;
 }
 
 .horizon37-title {
@@ -48,4 +58,5 @@ body {
     background-color: #272829;
     padding: 20px;
     margin: 0px;
+    font-size: 140%;
 }

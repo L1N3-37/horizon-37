@@ -1,3 +1,11 @@
+
+.jost {
+  font-family: "Jost", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
 body {
     margin: 0px;
     padding: 0px;
@@ -19,16 +27,18 @@ body {
 
 .projects-heading {
     text-align: center;
-    padding: 1px;
+    padding: 25px;
     margin: 0px;
     color: #272829;
+    font-size: 150%;
 }
 
 .subtitle-1 {
-    padding: 1px;
+    padding: 0px;
     margin: 0px;
     color: #272829;
     text-align: center;
+    font-size: 120%;
 }
 
 .para-1 {
@@ -36,4 +46,22 @@ body {
     margin: 0px;
     color: #61677a;
     text-align: center;
+    font-size: 110%;
+}
+
+.xbox-manager-container {
+    width: 20px;
+    height: 50px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    
+}
+
+.xbox-manager {
+    width: 350px;
+    height: 350px;
+    object-fit: cover;
+    position: absolute;
+    display: block;
 }
