@@ -1,28 +1,43 @@
-
-.jost {
-  font-family: "Jost", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 400;
-  font-style: normal;
-}
-
 body {
     margin: 0px;
     padding: 0px;
     background-color: #fff6e0;
-    font-family: "Jost", sans-serif;
+    font-family: "Josefin Sans", sans-serif;
     font-optical-sizing: auto;
-    /*font-weight: 100;*/
-    font-style: normal;
+    font-weight: 300;
 }
 
-.nav-bar {
-    padding: 1px;
+nav {
+    display: flex;
     margin: 0;
+    padding: 1px;
+    height: 80px;
+    gap: 80px;
     background-color: #272829;
     text-align: center;
-    font-weight: 200;
-    font-size: 150%;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-links {
+    text-decoration: none;
+    color: #ccc5b9;
+    font-weight: 400;
+    font-size: 160%;
+}
+
+.nav-links:hover {
+    color: #fff6e0;
+}
+
+.nav-37 {
+    font-size: 250%;
+    text-decoration: none;
+    color: #ccc5b9;
+}
+
+.nav-37:hover {
+    color: #fff6e0;
 }
 
 .projects-heading {
