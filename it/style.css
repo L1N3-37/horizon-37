@@ -6,21 +6,20 @@ body {
     font-family: "Josefin Sans";   
     font-optical-sizing: auto;
     font-weight: 300;
-    
 }
 
 #bg-image {
-  position: fixed;
-  top: 0;
-  left: 0;
-  height: 100vh;
-  width: 100vw;
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  z-index: -1;
-  opacity: .04;
-  pointer-events: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: -1;
+    opacity: .04;
+    pointer-events: none;
 }
 
 nav {
@@ -35,33 +34,46 @@ nav {
     background-color: #222629;
 }
 
-.nav-links {
-    text-decoration: none;
-    color: #6B6E70;
-    font-weight: 400;
-    font-size: 150%;
-}
+    .nav-links {
+        text-decoration: none;
+        color: #6B6E70;
+        font-weight: 400;
+        font-size: 150%;
+    }
+    
+        .nav-links:hover {
+        color: #86C232;
+        }
 
-.nav-links:hover {
-    color: #86C232;
-}
+        .selected {
+            color: #86C232;
+            font-size: 175%;
+        }
 
-.selected {
-    color: #86C232;
-    font-size: 175%;
-}
+        .nav-37 {
+            font-size: 180%;
+        }
 
-.nav-37 {
-    font-size: 170%;
-}
+        .grow-text {
+            display: inline-block;
+            transition: transform 0.3s ease;
+        }
 
-.nav-37:hover {
-    color: hsl(85, 59%, 65%);
-}
+        .grow-text:hover {
+            transform: scale(1.15); /* Grows the text */
+        }
 
-.line {
-    margin: 0px;
-    border: none;
-    border: solid #86C232;
-    border-top: none;
-}
+    .line {
+        margin: 0px;
+        border: none;
+        border: solid #86C232;
+        border-top: none;
+        animation: linehr ease-in 1s;
+    }
+
+    @keyframes linehr {
+        0% {
+            transform: scaleX(0);
+            opacity: 0;
+        }
+    }

@@ -9,18 +9,18 @@ body {
 }
 
 #bg-image {
-  position: fixed;
-  top: 0;
-  left: 0;
-  height: 100vh;
-  width: 100vw;
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  z-index: -1;
-  opacity: .04;
-  pointer-events: none;
-}
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: -1;
+    opacity: .04;
+    pointer-events: none;
+    }
 
 nav {
     display: flex;
@@ -34,32 +34,49 @@ nav {
     background-color: #222629;
 }
 
-.nav-links {
-    text-decoration: none;
-    color: #6B6E70;
-    font-weight: 400;
-    font-size: 150%;
-}
+    .nav-links {
+        text-decoration: none;
+        color: #6B6E70;
+        font-weight: 400;
+        font-size: 150%;
+    }
 
-.nav-links:hover {
-    color: #86C232;
-}
+        .nav-links:hover {
+            color: #86C232;
+        }
 
-.selected {
-    color: #86C232;
-    font-size: 175%;
-}
+        .selected {
+            color: #86C232;
+            font-size: 175%;
+        }
 
-.nav-37 {
-    font-size: 170%;
-}
+        .nav-37 {
+            font-size: 170%;
+        }
 
-.line {
-    margin: 0px;
-    border: none;
-    border: solid #86C232;
-    border-top: none;
-}
+        .grow-text {
+            display: inline-block;
+            transition: transform 0.3s ease;
+        }
+
+            .grow-text:hover {
+            transform: scale(1.15);
+        }
+
+    .line {
+        margin: 0px;
+        border: none;
+        border: solid #86C232;
+        border-top: none;
+        animation: linehr ease-in 1s forwards;
+    }
+
+        @keyframes linehr {
+            0% {
+                transform: scaleX(0);
+                opacity: 0;
+            }
+        }
 
 .subtitle-1 {
     padding: 0px;
@@ -69,27 +86,26 @@ nav {
     font-size: 120%;
 }
 
-.xbox-desc {
-    padding: 1px;
-    margin: 0px;
-    color: #6B6E70;
-    text-align: center;
-    font-size: 110%;
-}
+    .xbox-desc {
+        padding: 1px;
+        margin: 0px;
+        color: #6B6E70;
+        text-align: center;
+        font-size: 110%;
+    }
 
-.xbox-manager-container {
-    width: 20px;
-    height: 50px;
-    overflow: hidden;
-    display: flex;
-    justify-content: center;
-    
-}
+    .xbox-manager-container {
+        width: 20px;
+        height: 50px;
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+    }
 
-.xbox-manager {
-    width: 350px;
-    height: 350px;
-    object-fit: cover;
-    position: absolute;
-    display: block;
-}
+    .xbox-manager {
+        width: 350px;
+        height: 350px;
+        object-fit: cover;
+        position: absolute;
+        display: block;
+    }

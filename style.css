@@ -33,37 +33,50 @@ nav {
     justify-content: center;
     align-items: center;
     background-color: #222629;
-}
+    }
 
-.nav-links {
-    text-decoration: none;
-    color: #6B6E70;
-    font-weight: 400;
-    font-size: 150%;
-}
+    .nav-links {
+        text-decoration: none;
+        color: #6B6E70;
+        font-weight: 400;
+        font-size: 150%;
+    }
 
-.nav-links:hover {
-    color: #86C232;
-}
+            .nav-links:hover {
+                color: #86C232;
+            }
 
-.nav-37 {
-    font-size: 250%;
-    text-decoration: none;
-    color: #86C232;
-}
+        .nav-37 {
+            font-size: 250%;
+            text-decoration: none;
+            color: #86C232;
+        }
 
-.nav-37:hover {
-    color: hsl(85, 59%, 65%);
-}
+        .grow-text {
+            display: inline-block;
+            transition: transform 0.3s ease;
+        }
 
-.line {
-    margin: 0px;
-    border: none;
-    border: solid #86C232;
-    border-top: none;
-}
+        .grow-text:hover {
+            transform: scale(1.15);
+        }
 
-.H37-title {
+    .line {
+        margin: 0px;
+        border: none;
+        border: solid #86C232;
+        border-top: none;
+        animation: linehr ease-in 1s forwards;
+    }
+
+        @keyframes linehr {
+            0% {
+                transform: scaleX(0);
+                opacity: 0;
+            }
+        }
+
+#horizon {
     padding: 0px;
     margin: 0px;
     text-align: center;
@@ -72,7 +85,15 @@ nav {
     padding: 0px;
     margin: -10px;
     color: #ffffff;
+    opacity: 0;
+    animation: horizon-fadein ease 3s;
+    animation-fill-mode: forwards;
 }
+
+    @keyframes horizon-fadein {
+        0% { opacity: 0; }
+        100% { opacity: 1; }
+    }
 
 #slogan {
     color: white;
@@ -82,9 +103,31 @@ nav {
     margin: 0px;
     font-size: 170%;
     font-weight: 200;
+    opacity: 0;
+    animation: slogan-fadein ease 4s forwards;
+    animation-delay: .5s;
 }
 
-#slogan-hr {
-    border-color: #86C232;
-    width: 600px;
-}
+    @keyframes slogan-fadein {
+        0% { opacity: 0;}
+        100% { opacity: 1;}
+    }
+
+    #slogan-hr {
+        border-color: #86C232;
+        opacity: 0;
+        width: 600px;
+        transform: scaleX(0);
+        animation: slogan-hr 1s ease-out 1s forwards;
+    }
+
+        @keyframes slogan-hr {
+            0% {
+            transform: scaleX(0);
+            opacity: 0;
+        }
+            100% {
+            transform: scaleX(1);
+            opacity: 1;
+        }
+    }
