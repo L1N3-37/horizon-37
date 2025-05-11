@@ -87,7 +87,7 @@ nav {
     padding: 0px;
     margin: 0px;
     text-align: center;
-    font-size: clamp(3rem, 50vw, 10rem);
+    font-size: clamp(1rem, 50vw, 7rem);
     font-weight: 350;
     color: #ffffff;
     opacity: 0;
