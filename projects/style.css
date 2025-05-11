@@ -9,18 +9,19 @@ body {
 }
 
 #bg-image {
-    position: fixed;
-    top: 0;
-    left: 0;
-    height: 100vh;
-    width: 100vw;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    z-index: -1;
-    opacity: .04;
-    pointer-events: none;
-    }
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  z-index: -1;
+  opacity: 0.2;
+  filter: brightness(.9);
+  pointer-events: none;
+}
 
 nav {
     display: flex;

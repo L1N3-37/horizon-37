@@ -19,7 +19,8 @@ body {
   background-position: center;
   background-repeat: no-repeat;
   z-index: -1;
-  opacity: .04;
+  opacity: 0.2;
+  filter: brightness(.9);
   pointer-events: none;
 }
 
@@ -98,10 +99,9 @@ nav {
 #slogan {
     color: white;
     text-align: center;
-    font-size: 110%;
     padding: 0px;
     margin: 0px;
-    font-size: 170%;
+    font-size: 2rem;
     font-weight: 200;
     opacity: 0;
     animation: slogan-fadein ease 4s forwards;
@@ -116,7 +116,7 @@ nav {
     #slogan-hr {
         border-color: #86C232;
         opacity: 0;
-        width: 600px;
+        width: 655px;
         transform: scaleX(0);
         animation: slogan-hr 1s ease-out 1s forwards;
     }

@@ -19,7 +19,8 @@ body {
   background-position: center;
   background-repeat: no-repeat;
   z-index: -1;
-  opacity: .04;
+  opacity: 0.2;
+  filter: brightness(.9);
   pointer-events: none;
 }
 
