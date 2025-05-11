@@ -3,7 +3,7 @@ body {
     padding: 0px;
     height: 100%;
     background-color: #222629;
-    font-family: "Josefin Sans";   
+    font-family: "Josefin Sans", sans-serif;   
     font-optical-sizing: auto;
     font-weight: 300;
 }
@@ -36,16 +36,16 @@ nav {
     background-color: #222629;
 }
 
-.nav-links {
-    text-decoration: none;
-    color: #6B6E70;
-    font-weight: 400;
-    font-size: 1.4rem;
-}
+    .nav-links {
+        text-decoration: none;
+        color: #6B6E70;
+        font-weight: 400;
+        font-size: 1.4rem;
+    }
 
-.nav-links:hover {
-    color: #86C232;
-}
+        .nav-links:hover {
+            color: #86C232;
+        }  
 
 .nav-37 {
     font-size: 250%;
@@ -91,8 +91,8 @@ nav {
     font-weight: 350;
     color: #ffffff;
     opacity: 0;
-    animation: horizon-fadein ease 3s;
-    animation-fill-mode: forwards;
+    animation: horizon-fadein ease 5s forwards;
+    animation-delay: .2s;
 }
 
 @keyframes horizon-fadein {
@@ -101,15 +101,15 @@ nav {
 }
 
 #slogan {
-    color: white;
+    color: #86C232;
     text-align: center;
     padding: 0px;
     margin: 0px;
     font-size: clamp(1rem, 1.9vw, 10rem);
-    font-weight: 200;
+    font-weight: 300;
     opacity: 0;
     animation: slogan-fadein ease 4s forwards;
-    animation-delay: .5s;
+    animation-delay: .7s;
 }
 
 @keyframes slogan-fadein {
