@@ -6,7 +6,6 @@ body {
     font-family: "Josefin Sans";   
     font-optical-sizing: auto;
     font-weight: 300;
-    
 }
 
 #bg-image {
@@ -25,109 +24,130 @@ body {
 }
 
 nav {
+    flex-wrap: wrap;
     display: flex;
     margin: 0;
     padding: 1px;
     height: 100px;
-    gap: 80px;
+    gap: clamp(1rem, 5vw, 5rem);
     text-align: center;
     justify-content: center;
     align-items: center;
     background-color: #222629;
+}
+
+.nav-links {
+    text-decoration: none;
+    color: #6B6E70;
+    font-weight: 400;
+    font-size: 150%;
+}
+
+.nav-links:hover {
+    color: #86C232;
+}
+
+.nav-37 {
+    font-size: 250%;
+    text-decoration: none;
+    color: #86C232;
+}
+
+.grow-text {
+    display: inline-block;
+    transition: transform 0.3s ease;
+}
+
+.grow-text:hover {
+    transform: scale(1.15);
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+.line {
+    margin: 0px;
+    border: none;
+    border: solid #86C232;
+    border-top: none;
+    animation: linehr ease-in 1s forwards;
+}
+
+@keyframes linehr {
+    0% {
+        transform: scaleX(0);
+        opacity: 0;
     }
-
-    .nav-links {
-        text-decoration: none;
-        color: #6B6E70;
-        font-weight: 400;
-        font-size: 150%;
-    }
-
-            .nav-links:hover {
-                color: #86C232;
-            }
-
-        .nav-37 {
-            font-size: 250%;
-            text-decoration: none;
-            color: #86C232;
-        }
-
-        .grow-text {
-            display: inline-block;
-            transition: transform 0.3s ease;
-        }
-
-        .grow-text:hover {
-            transform: scale(1.15);
-        }
-
-    .line {
-        margin: 0px;
-        border: none;
-        border: solid #86C232;
-        border-top: none;
-        animation: linehr ease-in 1s forwards;
-    }
-
-        @keyframes linehr {
-            0% {
-                transform: scaleX(0);
-                opacity: 0;
-            }
-        }
+}
 
 #horizon {
     padding: 0px;
     margin: 0px;
     text-align: center;
-    font-size: 1100%;
+    font-size: clamp(2.5rem, 10vw, 8rem);
     font-weight: 350;
-    padding: 0px;
-    margin: -10px;
     color: #ffffff;
     opacity: 0;
     animation: horizon-fadein ease 3s;
     animation-fill-mode: forwards;
 }
 
-    @keyframes horizon-fadein {
-        0% { opacity: 0; }
-        100% { opacity: 1; }
-    }
+@keyframes horizon-fadein {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
 
 #slogan {
     color: white;
     text-align: center;
     padding: 0px;
     margin: 0px;
-    font-size: 2rem;
+    font-size: clamp(1.2rem, 3vw, 2.5rem);
     font-weight: 200;
     opacity: 0;
     animation: slogan-fadein ease 4s forwards;
     animation-delay: .5s;
 }
 
-    @keyframes slogan-fadein {
-        0% { opacity: 0;}
-        100% { opacity: 1;}
-    }
+@keyframes slogan-fadein {
+    0% { opacity: 0;}
+    100% { opacity: 1;}
+}
 
-    #slogan-hr {
-        border-color: #86C232;
-        opacity: 0;
-        width: 655px;
+#slogan-hr {
+    margin: 0 auto;
+    border-color: #86C232;
+    opacity: 0;
+    width: clamp(26rem, 3vw, 2.5rem); /* Adds 1rem to the width of the slogan */
+    transform: scaleX(0);
+    animation: slogan-hr 1s ease-out 1s forwards;
+}
+
+@keyframes slogan-hr {
+    0% {
         transform: scaleX(0);
-        animation: slogan-hr 1s ease-out 1s forwards;
+        opacity: 0;
     }
+    100% {
+        transform: scaleX(1);
+        opacity: 1;
+    }
+}
 
-        @keyframes slogan-hr {
-            0% {
-            transform: scaleX(0);
-            opacity: 0;
-        }
-            100% {
-            transform: scaleX(1);
-            opacity: 1;
-        }
-    }
+.slogan-container {
+    text-align: center;
+    display: block;
+    position: relative; /* Ensures the horizontal rule can be positioned relative to this container */
+    margin: 0 auto;
+    opacity: 0;
+    animation: slogan-container-fadein ease 4s forwards;
+    animation-delay: 0.5s;
+}
+
+@keyframes slogan-container-fadein {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
