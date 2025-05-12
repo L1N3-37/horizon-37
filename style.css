@@ -61,7 +61,7 @@ nav {
     font-size: 250%;
     text-decoration: none;
     color: #86C232;
-    font-weight: 700;
+    font-weight: 900;
 }
 
 .grow-text {
@@ -113,7 +113,8 @@ nav {
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    height: 40rem;
+    height: 31rem;
+
 }
 
 @keyframes horizon-fadein {
