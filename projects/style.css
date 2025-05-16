@@ -54,11 +54,11 @@ nav {
     }
 
         .nav-links:hover {
-            color: #86C232;
+            color: #8AC2BB;
         }
 
         .selected {
-            color: #86C232;
+            color: #8AC2BB;
             font-size: 1.7rem;
         }
 
@@ -78,7 +78,7 @@ nav {
     .line {
         margin: 0px;
         border: none;
-        border: solid #86C232;
+        border: solid #8AC2BB;
         border-top: none;
         animation: linehr ease-in 1s forwards;
     }
