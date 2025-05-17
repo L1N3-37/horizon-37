@@ -11,3 +11,8 @@ document.querySelector(".nav-37").addEventListener("click", function (event) {
     nav37Text.textContent = "37";
   }
 });
+window.onload = () => {
+  if (window.location.hash) {
+    history.replaceState(null, '', window.location.pathname);
+  }
+};
